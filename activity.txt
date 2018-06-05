@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/images10"
+
+  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="-"
+            android:onClick="decrement"/>
+        <Button
+            android:id="@+id/time_text_view"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="05.00"
+            android:onClick="timeDecrease"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:text="+"
+            android:onClick="increment"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:textSize="25dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="Guest"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="100dp"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/team_a_score"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="100dp"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/team_b_score"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="280dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="FREE THROW"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="scoreFreeThrow"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="2 Points"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="scoreTwo"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="3 Points"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="scoreThree"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="FREE THROW"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="scoreFreeThrew"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="2 Points"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="score2"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="3 Points"
+                android:textSize="15dp"
+                android:layout_margin="8dp"
+                android:onClick="score3B"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="reset"
+            android:textSize="15dp"
+            android:layout_marginLeft="250dp"
+            android:onClick="reset"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
